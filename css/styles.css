@@ -1,0 +1,528 @@
+*{
+  margin: 0px;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("../fonts/Sacramento-Regular.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url("../fonts/BalooBhai2-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+
+h1{
+  font-size: 2.3em;
+  font-family: myFirstFont;
+  font-weight: bold;
+}
+p{
+  font-size: 1.2em;
+  font-family: mySecondFont;
+}
+h2{
+  font-family: mySecondFont;
+}
+
+/* -------------------------------NavBar-Styling-Section----------------------------- */
+header{
+  width: 100%;
+}
+nav{
+  display:flex;
+  position:fixed;
+  width:100%;
+  height: 54px;
+  background-color:#4a8e4a;
+  opacity: 0.8;
+}
+
+.logo-container{
+    padding-left: 30px;
+    color: white;
+    height: 100%;
+
+}
+.logo{
+  margin-top: 5px;
+}
+
+.menu-container{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.menu-list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 70px;
+}
+
+.menu-list-item{
+  text-decoration: none;
+  margin: 25px 30px;
+  color: white;
+  margin-right: 30px;
+  font-family: mySecondFont;
+
+}
+
+.menu-list-item:hover{
+  color: white;
+  background-color: #4a8e4a;
+  padding: 6px 4px;
+  border:2px solid ;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+/* ------------------------------Welcome Container Styling--------------------------------- */
+
+.welcome-container{
+  width: 100%;
+  height: 700px;
+  background-color: blue;
+  background-image: url("../graphics/welcome-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+ .intro-heading{
+  font-size: 3em;
+  text-align: center;
+  padding-top: 180px;
+  color: white;
+
+
+}
+ .intro-paragraph{
+  text-align: center;
+  padding-top: 5px;
+  width: 260px;
+  margin: auto;
+  color: white;
+}
+
+/* -------------------------------------About Swabi---------------------------------- */
+.about-swabi-heading{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 10px;
+  color: #4a8e4a;
+  background-color: #ebffec;
+}
+
+.Demographics{
+  width: 100%;
+  background-color: #ebffec;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Demographics-content{
+  width: 50%;
+  padding: 10px 10px 10px 25px;
+  margin-top: 10px;
+}
+.demographic-photo{
+  border: 1px soild;
+  border-radius: 15px;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+/* ----------------------------------Middle Container Styling------------------------ */
+.blog-heading{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 20px;
+  color: #4a8e4a;
+  background-color: #ebffec;
+}
+.middle-contanier{
+  width: auto;
+  height: 460px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #ebffec;
+
+}
+
+.child-container{
+  width: 300px;
+  height: 370px;
+  border: 3px solid green;
+  text-align: center;
+  border-radius: 12px;
+  color: green;
+}
+
+.child-container img{
+  padding-top: 19px;
+  border-radius: 12px;
+}
+.child-container img:hover{
+  padding: 1px 5px;
+  cursor: pointer;
+}
+/* ---------------------------footer-Styling--------------------------------------- */
+.mainfooter{
+  width: auto;
+  height: auto;
+  color: white;
+  background-color: #4a8e4a;
+  padding-top:40px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.footer-copyright{
+  width: 100%;
+  text-align: center;
+}
+.footer-logo{
+  font-size: 2em;
+}
+
+.follow-us-heading{
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+/* --------------------------Famous-places-Styling--------------------------------- */
+.famous-places-container{
+  background-color: #ebffec;
+  width: 100%;
+}
+
+.famous-places-heading{
+  width: 700px;
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 3em;
+  width: auto;
+}
+
+.famous-places-paragraph{
+  padding: 20px;
+}
+.famous-places-list{
+  padding-left: 40px;
+}
+.famous-places-container ol li a{
+  text-decoration: none;
+  color: black;
+}
+
+.famous-places-container ol li a:hover{
+  color: brown;
+  padding: 5px 8px;
+}
+
+/* ==============================famous-places-to-vist=============================== */
+.famous-places-to-visit-heading{
+  text-align: center;
+  font-size: 3em;
+  padding: 30px 0px;
+  background-color: #ebffec;
+}
+
+.famous-places-to-visit{
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #ebffec;
+}
+
+
+.child-box-flex{
+  margin:30px 45px;
+  width: 300px;
+  height: 370px;
+  text-align: center;
+  padding: 15px 3px;
+  border: 3px solid green;
+  border-radius: 12px;
+  color: green;
+
+}
+.child-box-flex img{
+  padding-top: 19px;
+  border-radius: 12px;
+}
+.child-box-flex img:hover{
+  padding: 1px 5px;
+  cursor: pointer;
+}
+
+/* =================================Sub-Section-Styling====================================== */
+.main-heading{
+  width: 100%;
+  height: auto;
+  background-color: #ebffec;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align:center;
+}
+
+.main-container{
+  width: 100%;
+  background-color: #ebffec;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-paragraphs{
+  width: 50%;
+  padding: 10px 10px 10px 25px;
+  margin-top: 10px;
+
+}
+
+
+.history-heading{
+  width: 100%;
+  height: auto;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 18px;
+  background-color: #ebffec;
+
+}
+
+.history-container{
+  width: 100%;
+  background-color: #ebffec;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 60px;
+
+}
+.subsection-img{
+
+}
+
+
+
+/* =================Educational-Institutes-of-Swabi-Styling========================= */
+.educational-institutes-container{
+  background-color: #ebffec;
+}
+
+.educational-institutes-heading{
+  width: auto;
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 3em;
+}
+
+.educational-institutes-paragraph{
+  padding: 20px;
+}
+.educational-institutes-list{
+  padding-left: 40px;
+}
+.educational-institutes-container ol li a{
+  text-decoration: none;
+  color: black;
+}
+
+.educational-institutes-container ol li a:hover{
+  color: brown;
+  padding: 5px 8px;
+}
+/* ===========================Educational-institutes-to-vist-Styling=============================== */
+.educational-institutes-to-visit-heading{
+  text-align: center;
+  font-size: 3em;
+  padding: 30px 0px;
+  background-color: #ebffec;
+}
+
+.educational-institutes-to-visit{
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #ebffec;
+}
+
+.child-box-flex{
+  margin:30px 45px;
+  width: 300px;
+  height: 370px;
+  text-align: center;
+  padding: 15px 3px;
+  border: 3px solid green;
+  border-radius: 12px;
+  color: green;
+
+}
+.child-box-flex img{
+  padding-top: 19px;
+  border-radius: 12px;
+}
+.child-box-flex img:hover{
+  padding: 1px 5px;
+  cursor: pointer;
+}
+/* =================================contact-us======================================= */
+.contact-us-heading{
+  text-align: center;
+  font-size: 3.5em;
+  padding-top: 80px;
+  background-color: #ebffec;
+}
+.contact-us-form{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #ebffec;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: #ebffec;
+  padding-bottom: 40px;
+}
+.formstyle{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.inputbox{
+
+  height: 30px;
+}
+
+.Message-inputbox{
+
+  resize: none;
+  min-height: 120px;
+
+}
+.Message-text{
+  display: block;
+}
+.btn{
+  height: 33px;
+  width: 90px;
+  border-radius: 14px;
+  background-color: #bae0bc;
+}
+
+/* ==============================Responsiveness==================================== */
+@media only screen and (max-width: 800px) and (min-width: 310px) {
+  *{
+    margin: 0px;
+  }
+
+  nav{
+    display:flex;
+    position:fixed;
+    width:100%;
+    height: auto;
+    background-color:#061e06;
+    opacity: 0.8;
+    flex-direction: column;
+  }
+
+
+  .menu-list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
+    align-content: center;
+    align-items: center;
+    background-color: green;
+    justify-content: center;
+  }
+
+
+  .Demographics{
+    flex-direction: column-reverse;
+  }
+  .Demographics-content{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+
+  .blog-heading{
+    padding-bottom: 180px;
+  }
+
+  .middle-contanier{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 200px;
+  }
+
+  .child-container{
+    margin-bottom: 30px;
+  }
+
+  .footer{
+    flex-wrap: wrap;
+
+  }
+  /* --------------------------Famous-places-Styling--------------------------------- */
+  .famous-places-heading{
+    padding-top: 150px;
+    width: 100%;
+  }
+
+
+  .educational-institutes-heading{
+    padding-top: 130px;
+  }
+  /* ==============================famous-places-to-vist=============================== */
+
+  .main-heading{
+    padding-top: 130px;
+  }
+   .main-container{
+     text-align: center;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content: center;
+  }
+
+  .history-container{
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .main-paragraphs{
+    width: 100%;
+ }
+
+ /* =================================contact-us======================================= */
+.contact-us-heading{
+  padding-top: 150px;
+}
+
+
+}
